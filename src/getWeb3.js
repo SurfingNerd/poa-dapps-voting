@@ -34,8 +34,8 @@ let getWeb3 = () => {
               console.log('This is Sokol', netId)
               break
             case constants.NETID_ARTIS:
-              netIdName = "ARTIS";
-              console.log("This is ARTIS");
+              netIdName = 'ARTIS'
+              console.log('This is ARTIS')
               break
             default:
               netIdName = 'ERROR'
