@@ -1,5 +1,5 @@
 let constants = {}
-constants.organization = 'poanetwork'
+constants.organization = 'lab10-coop'
 constants.repoName = 'poa-chain-spec'
 constants.addressesSourceFile = 'contracts.json'
 constants.ABIsSources = {
@@ -25,6 +25,7 @@ constants.startTimeOffsetInMinutes = 5
 constants.endTimeDefaultInMinutes = 2890
 constants.getTransactionReceiptInterval = 5000
 constants.NETID_SOKOL = '77'
+constants.NETID_ARTIS = "4281426";
 constants.NETID_CORE = '99'
 constants.NETID_DAI_TEST = '79'
 constants.NETID_DAI = '100'

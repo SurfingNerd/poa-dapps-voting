@@ -10,6 +10,7 @@ import { addressesURL, wrongRepoAlert } from './helpers'
 // }
 
 let SOKOL_ADDRESSES = {}
+let ARTIS_ADDRESSES = {}
 let CORE_ADDRESSES = {}
 let DAI_TEST_ADDRESSES = {}
 let DAI_ADDRESSES = {}
@@ -35,6 +36,9 @@ async function getContractsAddresses(branch) {
     case 'sokol':
       SOKOL_ADDRESSES = contracts
       break
+    case 'ARTIS':
+      ARTIS_ADDRESSES = contracts
+      break
     case 'dai-test':
       DAI_TEST_ADDRESSES = contracts
       break
@@ -48,6 +52,8 @@ function getAddresses(netId) {
   switch (netId) {
     case constants.NETID_SOKOL:
       return SOKOL_ADDRESSES
+    case constants.NETID_ARTIS:
+      return ARTIS_ADDRESSES      
     case constants.NETID_DAI_TEST:
       return DAI_TEST_ADDRESSES
     case constants.NETID_CORE:
